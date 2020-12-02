@@ -1,17 +1,17 @@
 def badge_maker(name)
-  return "Hello, my name is #{name}."
+  puts "Hello, my name is #{name}."
 end
 
 def batch_badge_creator(attendees)
   attendees.each do |name|
-    return "Hello, my name is #{name}."
+    puts "Hello, my name is #{name}."
   end
 end
 
 def assign_rooms(attendees)
   attendees.each_with_index.map do |attendee, index|
-  "Hello, #{attendee}! You'll be assigned to room #{index+1}!"
-end
+    puts "Hello, #{attendee}! You'll be assigned to room #{index+1}!"
+  end
 end
 def printer(attendees)
   batch_badge_creator(attendees).each do |badge|
